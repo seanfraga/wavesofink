@@ -1,0 +1,45 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh11760\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 PALLADIO README AND QUICK-START GUIDE\
+\
+QUICK-START\
+1. Go to {\field{\*\fldinst{HYPERLINK "http://hdlab.stanford.edu/palladio-app/"}}{\fldrslt http://hdlab.stanford.edu/palladio-app/}}\
+2. Drag 
+\f1\b Waves of Ink - Palladio dataset.csv
+\f0\b0  from the Waves of Ink GitHub repository into the "Load .csv or spreadsheet" area, then click "Load"\
+3. Verify the data non-geographic data. Click the red dot next to "Vessel name," then verify special characters by clicking the characters outlined in red under the heading "Verify special characters." Repeat this step for "Vessel master" and "Vessel cargo."\
+4. Tell Palladio how to use the place-name data. Click the red dot next to "Port of origin," then enter a single comma in the textbook labeled "Multiple values." This tells Palladio that some of the entries contain multiple destinations, separated by a comma. (Do not verify special characters for this part of the data!) Repeat this step for "Destination port."\
+5. Connect geographic coordinates to the place-name data. Click "Port of origin," then "Add a new table." Drag 
+\f1\b Waves of Ink - Palladio extension 1 [ports coordinates].csv
+\f0\b0  from the Waves of Ink GitHub repository into the "Add new table" area, then click "Load," then "Done." Repeat this step for "Destination port" by clicking "Destination port," then "Choose a table," and selecting the table you just added (which is named "Untitled" by default). Palladio will list the number of place names that it is able to match with geographic coordinates. Not all place-names have a geographic coordinate match.\
+6. Use Palladio\'92s "Map," "Graph," and "Table" sandboxes to explore the data. To access tutorials and FAQs, go to {\field{\*\fldinst{HYPERLINK "https://hdlab.stanford.edu/palladio/help/"}}{\fldrslt https://hdlab.stanford.edu/palladio/help/}}\
+\
+ADAPTATIONS\
+This dataset has been adapted and simplified from the ledger transcription in the following ways.\
+\
+- Voyages without full date information (YYYY-MM-DD) have been removed, although dates for some outbound voyages have been interpolated from inbound voyages (see ledger README file for more information)\
+\
+- Some country-level or region-level geographic place-names have been assigned specific geographic coordinates to major ports already in the shipping records as follows:\
+	Australia \'97> Melbourne\
+	New South Wales \'97> Melbourne\
+	Bellingham Bay \'97> Whatcom\
+	China \'97> Hong Kong\
+	England \'97> London\
+	Hawaiian Islands \'97> Honolulu\
+	Peru \'97> Callao\
+	Vancouver\'92s Island \'97> Victoria\
+\
+- Several region-level geographic place-name have not been assigned specific geographic coordinates (e.g. From Sea, Hood Canal, Ports in South Pacific, Ports in the Pacific, East Indies)\
+\
+- Vessel information (such as type, tonnage, and place of construction) is not a part of this table; this information will be available in a future extension table\
+\
+- Vessel master information for each voyage is included in this table, but may require additional cleaning and verification \
+\
+- Cargo information for each voyage is included in this table, but requires additional verification and cleaning before it will be usable\
+\
+}

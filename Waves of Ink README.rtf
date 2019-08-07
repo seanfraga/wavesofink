@@ -1,0 +1,87 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh11080\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 README\
+\
+The files in this repository contain data from different stages of the research, transcription, verification, analysis, and visualization process. It is drawn from an archival ledger, "Registers of Entrances and Clearances of Vessels, Nov. 1851 - April 1861," held by NARA Seattle (RG36, series 17, vol. 1). Detailed information about each file in this repository is listed below.\
+\
+The ledger contains information about the arrival and departure of vessels to and from the Puget Sound Customs District between 1851-11 and 1861-04. Between 1851-11 and and 1857-04, Customs officials entered each vessel individually, then recorded relevant arrival and departure information in that vessel\'92s entry. These entries spanned both pages. Starting in 1857-05 and continuing to the end of the ledger, Customs officials recorded arrivals and departures as separate entries, using the left-hand page for arrival entries and the right-hand page for departure entries. \
+\
+Between 1851-11 and and 1857-04, Customs officials recorded some or all of the following information for each vessel: arrival date, vessel type, vessel name, vessel registration, inbound master, inbound cargo, inbound from (port of origin), tonnage, inbound crew number (sometimes separated into "men" and "boys"), place of construction, date of construction, inbound papers, inbound passenger number, date of departure from port of origin, date of arrival, outbound master, outbound cargo, outbound to (destination), outbound crew number (sometimes separated into "men" and "boys"), outbound passenger number, outbound papers, value, notes. \
+\
+Starting in 1857-05 and continuing to the end of the ledger, Customs officials recorded some or all of the following information for each arrival or departure: date of arrival or departure, vessel type, vessel name, vessel registration, master, cargo, origin or destination, tonnage.\
+\
+This project is a work in progress. Although my research assistants and I have made every effort to ensure accurate transcriptions, I make no guarantees or warranties about the accuracy of the data contained herein. I welcome your suggestions or corrections.\
+\
+
+\f1\b 1. Registers of Entrances and Clearances of Vessels, Nov. 1851 - April 1861 (NARA Seattle, RG36, series 17, vol. 1).pdf\
+
+\f0\b0 - This PDF contains a digital image of each page of the original, archival ledger and is the source for the transcribed data contained in other files in this repository\
+- This file is not in the GitHub repository because it is too large to upload to GitHub. Instead, it is available in a public Google Drive at this link: {\field{\*\fldinst{HYPERLINK "https://drive.google.com/file/d/1xnZqTrrxCCHIVo6Io1GVJOp9T8w339lt/view?usp=sharing"}}{\fldrslt https://drive.google.com/file/d/1xnZqTrrxCCHIVo6Io1GVJOp9T8w339lt/view?usp=sharing}}\
+\
+
+\f1\b 2. Waves 0.2 [transcription and verification].xlsx
+\f0\b0 \
+- This Excel workbook (.xlsx) contains four sheets:\
+- "First half - transcription" and "Second half - transcription" contain transcriptions of the first and second half of the ledger PDF, respectively, performed by two different research assistants\
+- Cells highlighted in yellow indicate transcriptions that the transcribing research assistants wasn\'92t sure were correct\
+- "First half - verification" and "Second half - verification" contain cross-checked transcriptions; each research assistant checked the other\'92s work against the ledger PDF\
+- Cells highlighted in cyan indicate transcriptions that the research assistants both weren\'92t sure were correct or that they disagreed over how to transcribe\
+\
+
+\f1\b 3. Waves 0.5 [cleaned beta].xlsx\
+
+\f0\b0 - This Excel workbook (.xlsx) contains one sheet, consisting of a joined version of the "First half - verification" and "Second half - verification" sheets from 
+\f1\b Waves 0.2 [transcription and verification].xlsx
+\f0\b0 . \
+\
+- Cells highlighted in yellow indicate transcriptions that one research assistants wasn\'92t sure was correct\
+- Cells highlighted in cyan indicate transcriptions that both research assistants weren\'92t sure were correct or that they disagreed over how to transcribe\
+- Cells highlighted in orange indicate transcriptions that require additional scrutiny or research in order to conclusively resolve \
+- Cells highlighted in green indicate entries that are likely duplicated elsewhere in the ledger PDF\
+\
+- As part of cleaning the data, I made the following edits (organized by column):\
+	inbound tonnage: added "95" as denominator where missing (e.g. "18 8/" became "18 8/95")\
+	inbound vessel type: standardized and expanded abbreviations (e.g. "Bk" = "Bark")\
+	inbound vessel name: standardized vessel names\
+	inbound from: standardized inbound ports\
+	outbound vessel type: copied inbound data for voyages from 11/1851 through 4/1857\
+	outbound vessel name: copied inbound data for voyages from 11/1851 through 4/1857	outbound tonnage: added "95" as denominator where missing (e.g. "18 8/" became "18 8/95")\
+	outbound tonnage: copied inbound data for voyages from 11/1851 through 4/1857\
+\
+- Outbound voyages for the following periods lack departure dates in the original record. As a rough proxy and to produce a usable dataset, I have duplicated the arrival date (so that a vessel appears to have arrived and departed the same day during these periods): Some outbound voyages in the second half of 1852, almost all outbound voyages in 1853, 1854, and 1855-9; almost all outbound voyages in 1855-10; all outbound voyages in 1855-11, 1855-12, 1856-1, 1856-2, 1856-3, 1856-4, 1856-5, and 1856-6; and some outbound voyages in 1856-7, 1856-8, and 1856-9. Consult 
+\f1\b Waves 0.2 [transcription and verification].xlsx
+\f0\b0  or the original ledger to see if the outbound date was recorded for a particular voyage \
+\
+
+\f1\b 4. Palladio README and quick-start guide.rtf
+\f0\b0 \
+- This document contains directions for starting to use 
+\f1\b Waves of Ink - Palladio dataset.csv 
+\f0\b0 with Palladio and information about how 
+\f1\b Waves of Ink - Palladio dataset.csv 
+\f0\b0 differs from 
+\f1\b Waves 0.5 [cleaned beta].xlsx
+\f0\b0 .\
+\
+
+\f1\b 5. Waves of Ink - Palladio dataset.csv
+\f0\b0 \
+- This comma-separated value file (.csv) contains a simplified version of voyage data, drawn from 
+\f1\b Waves 0.5 [cleaned beta].xlsx
+\f0\b0 , appropriate for use with Palladio. Consult 
+\f1\b Palladio README and quick-start guide.rtf
+\f0\b0  for specific information on how this file differs.\
+\
+- I was unable to locate when the customs house moved from Olympia to Port Townsend. For purposes of this example dataset, I have placed the move in 1854-06, which corresponds with a break in the entries on the pages of the archival ledger itself. (Olympia first enters the record as destination on 1854-09-27, so the move likely took place some time before then.)\
+\
+
+\f1\b 6. Waves of Ink - Palladio extension 1 [ports coordinates].csv\
+
+\f0\b0 - This comma-separated value file (.csv) contains geographic information (place-name and lat-long coordinates) for ports mentioned in 
+\f1\b Waves of Ink - Palladio dataset.csv
+\f0\b0  and is provided for use with that dataset in Palladio.}
